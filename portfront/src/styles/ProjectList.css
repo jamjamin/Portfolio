@@ -1,0 +1,38 @@
+
+
+.project-list {
+    display: flex;
+}
+
+.project-item {
+    display: flex;
+    width: 850px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #323232;
+}
+
+
+
+.project-info {
+    display: block;
+    padding-left: 32px;    
+}
+
+.project-title {
+    font-size: 20px;
+}
+
+.project-info p {
+    font-size: 14px;
+}   
+
+.project-tags {
+    display: flex;
+}
+
+.project-tag {
+    font-size: 14px;
+    padding: 6px 10px;
+    margin: 5px;
+}

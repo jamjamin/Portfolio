@@ -1,0 +1,17 @@
+h1 {
+    font-size: 40px;
+}
+
+.project-details {
+    display: flex;
+}
+
+.details-side {
+    padding: 5px 5px;
+    flex-basis: 20%;
+}
+
+.details-main {
+    padding: 5px 5px;
+    flex-basis : 80%;
+}

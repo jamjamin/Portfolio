@@ -1,0 +1,60 @@
+/* Global Styles n stuff */
+
+body {
+    color: #ffffff;
+    background-color: #1E1E1E;
+    width: 70%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: right;
+    align-items: center;
+}
+
+/* Home */
+
+.profile-pic {
+    vertical-align: middle;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.home-summary {
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.summary-details {
+    margin-left: 20px;
+}
+
+/* NavBar */
+.nav-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: left;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+}
+.nav-items {
+    padding: 20px 20px;
+}
+
+/* Projects */
