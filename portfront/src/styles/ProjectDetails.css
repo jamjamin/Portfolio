@@ -2,6 +2,15 @@ h1 {
     font-size: 40px;
 }
 
+/* Img Demo */
+.swiper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* All the others */
+
 .project-details {
     display: flex;
 }
