@@ -1,4 +1,4 @@
-import { ProjectDataType } from '@/test/projects'
+import { ProjectDataType } from '@/data/projects'
 import Image from 'next/image'
 import React from 'react'
 import { ProjectTag } from './ProjectTag'
@@ -21,9 +21,9 @@ export const ProjectItem = ({ projectData } : ProjectItemProps) => {
                 <div className='project-title'> {projectData.projectTitle} </div>
                 <p> {projectData.projectDesc} </p>
                 <div className='project-tags'> 
-                    <ProjectTag name='Collaborative' tagStyle='category'/>
-                    <ProjectTag name='ReactJS' tagStyle='react-js'/>
-                    <ProjectTag name='NodeJS' tagStyle='node-js'/>
+                    {projectData.tags.map(tag => <ProjectTag name={tag} tagStyle='category'/>)}
+                    {projectData.projectDetails.technologies.map(tech => <ProjectTag name={tech}/>)}
+                    {projectData.projectDetails.languages.map(lang => <ProjectTag name={lang}/>)}
                 </div>
             </div>
         </a>

@@ -2,9 +2,10 @@ import { NavBar } from '@/components/NavBar'
 import React from 'react'
 import Image from 'next/image'
 
-import '@/styles/ProjectDetails.css'
-import { ImgDemo } from '@/components/projects/ImgDemo'
 
+import { ImgDemo } from '@/components/projects/ImgDemo'
+import { projectData } from '@/data/projects'
+import '@/styles/ProjectDetails.css'
 type ProjectDetailsProps = {
     params : {
         projectId : string
