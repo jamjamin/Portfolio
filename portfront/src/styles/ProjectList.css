@@ -1,4 +1,12 @@
 
+.project-filters {
+    display: flex;
+    width: 2000px;
+}
+.filter-selection {
+    justify-content: right;
+    padding-left: 1000px;
+}
 
 .project-list {
     display: flex;
