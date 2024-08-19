@@ -11,7 +11,7 @@ type ProjectDetailsType = {
     overview: string[], // Each string element is a paragraph
     images?: string[],
     links: string[],
-    members: ProjectMembersType[],
+    members?: ProjectMembersType[],
     technologies: ProjectTagType[],
     languages: ProjectTagType[]
 }
@@ -30,7 +30,7 @@ type ProjectTagType = {
 export const projectData = [
     {
         projectId : 1,
-        projectTitle : "AVM",
+        projectTitle : "Automated Vulnerability Management",
         projectDesc : "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio sapien ipsum neque quisque feugiat magnis taciti. Justo ultricies rhoncus a proin pulvinar quis. Nullam varius tortor, cursus posuere praesent morbi himenaeos.",
         projectDetails: {
             overview: ["Paragraph 1", "Paragraph 2"],
@@ -91,4 +91,24 @@ export const projectData = [
             {tagName: "Collaborative", backgroundColor: "#635627", color: "#FFDB56"}
         ]
     },
+    {
+        projectId : 3,
+        projectTitle : "Sudoku",
+        projectDesc : "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio sapien ipsum neque quisque feugiat magnis taciti. Justo ultricies rhoncus a proin pulvinar quis. Nullam varius tortor, cursus posuere praesent morbi himenaeos.",
+        projectDetails: {
+            overview: ["Paragraph 1", "Paragraph 2"],
+            images: [],
+            links: ["www.link1.com", "www.link2.net"],
+            technologies: [
+                {tagName: "DerbyDB", backgroundColor: "#00234D", color: "#3CD0FF"}, 
+            ],
+            languages: [
+                {tagName: "Java", backgroundColor: "#5C5C5C", color: "#FFFFFF"}
+            ]
+        },
+        tags: [
+            {tagName: "University", backgroundColor: "#635627", color: "#FFDB56"},  
+        ]
+    },
+
 ]

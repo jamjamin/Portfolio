@@ -20,7 +20,20 @@ h1 {
     flex-basis: 20%;
 }
 
+.project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y:auto
+}
+
 .details-main {
     padding: 5px 5px;
     flex-basis : 80%;
+}
+
+/* DRY Violation */
+.project-tag {
+    font-size: 14px;
+    padding: 6px 10px;
+    margin: 5px;
 }
