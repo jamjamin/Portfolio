@@ -31,6 +31,12 @@ h1 {
     flex-basis : 80%;
 }
 
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y:auto
+}
+
 /* DRY Violation */
 .project-tag {
     font-size: 14px;

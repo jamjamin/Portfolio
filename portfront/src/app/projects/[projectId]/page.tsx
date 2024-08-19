@@ -39,8 +39,10 @@ export default function ProjectDetails({ params } : ProjectDetailsProps) {
                     </div>
                     <div className='project-techs'>
                         <h2> Technologies/Tools </h2>
-                        {project.projectDetails.technologies.map(({tagName, backgroundColor, color}) => <ProjectTag name={tagName} tagStyle={{bg: backgroundColor, color: color}}/>)}
-                        {project.projectDetails.languages.map(({tagName, backgroundColor, color}) => <ProjectTag name={tagName} tagStyle={{bg: backgroundColor, color: color}}/>)}
+                        <div className='project-tags'>
+                            {project.projectDetails.technologies.map(({tagName, backgroundColor, color}) => <ProjectTag name={tagName} tagStyle={{bg: backgroundColor, color: color}}/>)}
+                            {project.projectDetails.languages.map(({tagName, backgroundColor, color}) => <ProjectTag name={tagName} tagStyle={{bg: backgroundColor, color: color}}/>)}
+                        </div>
                     </div>
                 </div>
                 <div className='details-main'>
