@@ -4,7 +4,7 @@ export type ProjectDataType = {
     projectThumbnail?: string
     projectDesc : string
     projectDetails: ProjectDetailsType
-    tags: string[]
+    tags: ProjectTagType[]
 }
 
 type ProjectDetailsType = {
@@ -12,13 +12,19 @@ type ProjectDetailsType = {
     images?: string[],
     links: string[],
     members: ProjectMembersType[],
-    technologies: string[]
-    languages: string[]
+    technologies: ProjectTagType[],
+    languages: ProjectTagType[]
 }
 
 type ProjectMembersType = {
     name: string,
     link?: string
+}
+
+type ProjectTagType = {
+    tagName : string,
+    backgroundColor : string,
+    color : string
 }
 
 export const projectData = [
@@ -40,10 +46,19 @@ export const projectData = [
                     link: "www.linkedin.com"
                 }
             ],
-            technologies: ["ReactJS", "NodeJS"],
-            languages: ["HTML/CSS", "JavaScript"]
+            technologies: [
+                {tagName: "ReactJS", backgroundColor: "#154F57", color: "#46E9FF"}, 
+                {tagName: "NodeJS", backgroundColor: "#335729", color: "#29EF31"}
+            ],
+            languages: [
+                {tagName: "HTML/CSS", backgroundColor: "#5C5C5C", color: "#FFFFFF"},
+                {tagName: "JavaScript", backgroundColor: "#5C5C5C", color: "#FFFFFF"}
+            ]
         },
-        tags: ["University", "Collaborative"]
+        tags: [
+            {tagName: "University", backgroundColor: "#635627", color: "#FFDB56"},  
+            {tagName: "Collaborative", backgroundColor: "#635627", color: "#FFDB56"}
+        ]
     },
     {
         projectId : 2,
@@ -63,9 +78,17 @@ export const projectData = [
                     link: "www.linkedin.com"
                 }
             ],
-            technologies: ["Flutter", "Firebase"],
-            languages: ["Dart"]
+            technologies: [
+                {tagName: "Flutter", backgroundColor: "#00234D", color: "#3CD0FF"}, 
+                {tagName: "Firebase", backgroundColor: "#553000", color: "#FF9100"}
+            ],
+            languages: [
+                {tagName: "Dart", backgroundColor: "#5C5C5C", color: "#FFFFFF"}
+            ]
         },
-        tags: ["University", "Collaborative"]
+        tags: [
+            {tagName: "University", backgroundColor: "#635627", color: "#FFDB56"},  
+            {tagName: "Collaborative", backgroundColor: "#635627", color: "#FFDB56"}
+        ]
     },
 ]

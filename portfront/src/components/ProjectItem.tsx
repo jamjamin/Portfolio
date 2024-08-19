@@ -21,9 +21,11 @@ export const ProjectItem = ({ projectData } : ProjectItemProps) => {
                 <div className='project-title'> {projectData.projectTitle} </div>
                 <p> {projectData.projectDesc} </p>
                 <div className='project-tags'> 
-                    {projectData.tags.map(tag => <ProjectTag name={tag} tagStyle='category'/>)}
-                    {projectData.projectDetails.technologies.map(tech => <ProjectTag name={tech}/>)}
-                    {projectData.projectDetails.languages.map(lang => <ProjectTag name={lang}/>)}
+                    {/* Potential DRY Violation Below */}
+                    {projectData.tags.map(({tagName, backgroundColor, color}) => <ProjectTag name={tagName} tagStyle={{bg: backgroundColor, color: color}}/>)}
+                    {projectData.projectDetails.technologies.map(({tagName, backgroundColor, color}) => <ProjectTag name={tagName} tagStyle={{bg: backgroundColor, color: color}}/>)}
+                    {projectData.projectDetails.languages.map(({tagName, backgroundColor, color}) => <ProjectTag name={tagName} tagStyle={{bg: backgroundColor, color: color}}/>)}
+                    {/* Potential DRY Violation Above */}
                 </div>
             </div>
         </a>
