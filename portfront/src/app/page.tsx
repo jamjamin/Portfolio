@@ -1,6 +1,5 @@
 import { NavBar } from "@/components/NavBar";
 import { ProjectItem } from "@/components/ProjectItem";
-import TestComp from "@/components/TestComp";
 import { projectData } from "@/test/projects";
 import Image from 'next/image';
 

@@ -19,6 +19,7 @@ export const ProjectItem = ({ projectData } : ProjectItemProps) => {
             <img src="/test.png" width={384} height={216}/>
             <div className='project-info'>
                 <div className='project-title'> {projectData.projectTitle} </div>
+                <div className='project-sub-title'> {projectData.projectType} </div>
                 <p> {projectData.projectDesc} </p>
                 <div className='project-tags'> 
                     {/* Potential DRY Violation Below */}

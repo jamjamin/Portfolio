@@ -22,7 +22,7 @@ export default function ProjectDetails({ params } : ProjectDetailsProps) {
         <>
             <h1> {project.projectTitle} </h1>
             <div className='under-title'>
-                <text> Project Type </text>
+                <text> {project.projectType} </text>
                 <text> Project Start </text>
                 <text> Last Updated </text>
             </div>

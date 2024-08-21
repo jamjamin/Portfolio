@@ -30,11 +30,15 @@
 }
 
 .project-title {
-    font-size: 20px;
+    font-size: 21px;
+}
+
+.project-sub-title {
+    font-size: 16px;
 }
 
 .project-info p {
-    font-size: 14px;
+    font-size: 13px;
 }   
 
 /* DRY Violation */
@@ -48,5 +52,5 @@
 .project-tag {
     font-size: 14px;
     padding: 6px 10px;
-    margin: 5px;
+    margin: 3px;
 }

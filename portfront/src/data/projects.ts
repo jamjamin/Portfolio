@@ -1,6 +1,7 @@
 export type ProjectDataType = {
-    projectId : number,
-    projectTitle : string,
+    projectId : number
+    projectTitle : string
+    projectType: string
     projectThumbnail?: string
     projectDesc : string
     projectDetails: ProjectDetailsType
@@ -21,7 +22,7 @@ type ProjectMembersType = {
     link?: string
 }
 
-type ProjectTagType = {
+export type ProjectTagType = {
     tagName : string,
     backgroundColor : string,
     color : string
@@ -31,6 +32,7 @@ export const projectData = [
     {
         projectId : 1,
         projectTitle : "Automated Vulnerability Management",
+        projectType : "Website",
         projectDesc : "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio sapien ipsum neque quisque feugiat magnis taciti. Justo ultricies rhoncus a proin pulvinar quis. Nullam varius tortor, cursus posuere praesent morbi himenaeos.",
         projectDetails: {
             overview: ["Paragraph 1", "Paragraph 2"],
@@ -63,6 +65,7 @@ export const projectData = [
     {
         projectId : 2,
         projectTitle : "Project Loner",
+        projectType: "Mobile Application",
         projectDesc : "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio sapien ipsum neque quisque feugiat magnis taciti. Justo ultricies rhoncus a proin pulvinar quis. Nullam varius tortor, cursus posuere praesent morbi himenaeos.",
         projectDetails: {
             overview: ["Paragraph 1", "Paragraph 2"],
@@ -94,6 +97,7 @@ export const projectData = [
     {
         projectId : 3,
         projectTitle : "Sudoku",
+        projectType : "Desktop Application",
         projectDesc : "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio sapien ipsum neque quisque feugiat magnis taciti. Justo ultricies rhoncus a proin pulvinar quis. Nullam varius tortor, cursus posuere praesent morbi himenaeos.",
         projectDetails: {
             overview: ["Paragraph 1", "Paragraph 2"],
